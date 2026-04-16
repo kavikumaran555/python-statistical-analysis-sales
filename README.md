@@ -10,6 +10,7 @@ Matplotlib
 Seaborn
 Scipy
 Scikit-learn
+
 📁 Dataset
 
 The dataset contains:
@@ -18,6 +19,7 @@ Product details
 Sales data
 Regions
 Order dates
+
 🔍 1. Descriptive Statistics
 
 table.describe()
