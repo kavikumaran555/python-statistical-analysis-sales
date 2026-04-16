@@ -23,7 +23,7 @@ Order dates
 🔍 1. Descriptive Statistics
 
 table.describe()
-![Descriptive Statistics](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/descriptive_statistics_image1.PNG)
+![Descriptive Statistics](descriptive_statistics_image1.PNG)
 
 table.head()
 ![Table Head](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/tale_head_image.PNG)
