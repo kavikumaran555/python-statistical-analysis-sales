@@ -26,10 +26,10 @@ table.describe()
 ![Descriptive Statistics](descriptive_statistics_image1.PNG)
 
 table.head()
-![Table Head](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/tale_head_image.PNG)
+![Table Head](tale_head_image.PNG)
 
 table.info()
-![Table Info](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/table_info_image.PNG)
+![Table Info](table_info_image.PNG)
 
 Insight: Provides overall understanding of data (count, mean, min, max, structure).
 
@@ -37,7 +37,7 @@ Insight: Provides overall understanding of data (count, mean, min, max, structur
 🔗 2. Correlation Analysis
 
 table[['unit_price','quantity','total_sales']].corr()
-![Correlation Output](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/correlation_image.PNG)
+![Correlation Output](correlation_image.PNG)
 
 Insight:
 
@@ -47,10 +47,10 @@ Quantity and price → negative relationship
 📊 3. GroupBy Analysis
 
 table.groupby('region')['total_sales'].sum()
-![Grouping Output](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/grouping_image.PNG)
+![Grouping Output](grouping_image.PNG)
 
 table.groupby('product_name')['total_sales'].sum().sort_values(ascending=False)
-![Top Products](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/grouping_and_sorting.PNG)
+![Top Products](grouping_and_sorting.PNG)
 
 Insight: Identifies top-performing regions and products.
 
@@ -58,7 +58,7 @@ Insight: Identifies top-performing regions and products.
 
 table['order_date'] = pandas.to_datetime(table['order_date'])
 table.groupby('order_date')['total_sales'].sum().plot()
-![Trend Output](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/trend_analysis_line_chart.PNG)
+![Trend Output](trend_analysis_line_chart.PNG)
 
 Insight: Shows how sales change over time.
 
@@ -67,7 +67,7 @@ Insight: Shows how sales change over time.
 import matplotlib.pyplot as plt
 table['total_sales'].hist()
 plt.show()
-![Histogram Output](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/distribution_histogram.PNG)
+![Histogram Output](distribution_histogram.PNG)
 
 Insight: Most sales fall within a specific range.
 
@@ -118,7 +118,7 @@ Insight: Shows how price impacts quantity sold.
 🚨 10. Outlier Detection (Box Plot)
 
 table.boxplot(column='total_sales')
-![Box Plot](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/outlier_detection_box_plot.PNG)
+![Box Plot](outlier_detection_box_plot.PNG)
 
 Insight: Detects extreme values.
 
@@ -126,7 +126,7 @@ Insight: Detects extreme values.
 
 import seaborn
 seaborn.pairplot(table[['unit_price','quantity','total_sales']])
-![Pair Plot](https://raw.githubusercontent.com/kavikumaran555/Ecommerce-MySQL-to-PowerBI-Project/main/feature_relationship_pair_plot.PNG)
+![Pair Plot](feature_relationship_pair_plot.PNG)
 
 Insight: Shows relationships between variables visually.
 
